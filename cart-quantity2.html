@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>cart quantity</title>
+    
+  </head>
+  <body>
+   <button onclick="
+    console.log(`Cart quantity: ${cartQuantity}`);
+    
+    ">
+    Show Quantity
+   </button>
+
+   <button onclick="
+   updateCartQuantity(1);
+   ">
+    Add to Cart
+   </button>
+
+   <button onclick="
+   updateCartQuantity(-1);
+   ">
+    Remove from cart
+   </button>
+
+   <button onclick="
+   updateCartQuantity(2);
+   ">
+    +2
+   </button>
+
+   <button onclick="
+    updateCartQuantity(3);
+   
+   ">
+    +3
+   </button>
+
+   <button onclick="
+   updateCartQuantity(4);
+   
+   ">
+    +4
+   </button>
+
+   <button onclick="
+   updateCartQuantity(5);
+  
+  ">
+   +5
+  </button>
+
+  <button onclick="
+  updateCartQuantity(-2);
+ 
+ ">
+  -2
+ </button>
+
+ <button onclick="
+  updateCartQuantity(-3);
+ 
+ ">
+  -3
+ </button>
+
+
+
+
+
+   <button onclick="
+   cartQuantity = 0;
+   console.log('cart was reset.')
+   console.log(`Cart quantity: ${cartQuantity}`);
+   
+   ">
+    Reset Cart
+   </button>
+
+
+    <script>
+    let cartQuantity = 0;
+
+    function updateCartQuantity(pipo) {
+      if (cartQuantity + pipo > 10) {
+        alert('Cart is full.')
+        return;
+      }
+       if (cartQuantity + pipo < 0) {
+        alert('Cart is empty.')
+        return;
+      }
+
+      cartQuantity = cartQuantity + pipo; {
+      
+      console.log(`Cart quantity: ${cartQuantity}`)
+      }
+    }
+
+    /*
+    function updateCartQuantity(pipo) {
+      if (cartQuantity + pipo > 10) {
+        console.log('Cart is full.')
+      }
+      else if (cartQuantity + pipo < 0) {
+        console.log('Cart is empty.')
+      }
+      else (cartQuantity = cartQuantity + pipo); {
+      
+      console.log(`Cart quantity: ${cartQuantity}`)
+      }
+    }
+    */
+
+
+    
+    </script>
+  </body>
+</html>

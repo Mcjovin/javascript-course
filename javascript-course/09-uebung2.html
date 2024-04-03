@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>LALALA</title>
+  </head>
+  <body>
+
+
+  <input class="js-name-input"  placeholder="Put your name here" onkeydown="
+  enterTaste(event);">
+
+  
+  
+    <button onclick="function3();"> Submit</button>
+
+  <p class="js-name-output"></p>
+
+
+  <script>
+   
+    function function3() {
+      const inputName = document.querySelector('.js-name-input');
+    
+      document.querySelector('.js-name-output')
+        .innerHTML = `Your name is : ${inputName.value}`;
+    }
+
+    function enterTaste(event) {
+      if (event.key === 'Enter') {
+       function3();
+      }
+
+    }
+    
+    
+    
+    
+  </script>
+  </body>
+</html>

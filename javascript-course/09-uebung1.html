@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>LALALA</title>
+  </head>
+  <body>
+    
+  <button onclick="function1();">heads</button>
+  <button onclick="function2();">tails</button>
+  <p class="js-text"></p> 
+
+
+  <input class="js-name-input"  placeholder="Put your name here" onkeydown="
+  enterTaste(event);>
+
+  
+  
+    <button onclick="function3();"> Submit</button>
+
+  <p class="js-name-output"></p>
+
+
+  <script>
+    /*function function1 () {
+      document.querySelector('.js-text')
+        .innerHTML = 'You chose: heads';
+
+    }
+
+    function function2 () {
+      document.querySelector('.js-text')
+        .innerHTML = 'You chose: tails';
+    }
+  
+    function enterTaste(event) {
+      if (event.key === 'Enter') {
+        function3();
+      }
+
+    }
+    */
+
+    function function3() {
+      const inputName = document.querySelector('.js-name-input');
+    
+      document.querySelector('.js-name-output')
+        .innerHTML = `Your name is : ${inputName.value}`;
+    }
+    
+    
+    
+    
+  </script>
+  </body>
+</html>
